@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Is Building Physical AI · Inside China AI</title>
+<meta name="description" content="12 editorial graphics: China's Physical AI story in data. By Inside China AI.">
+<meta property="og:title" content="China Is Building Physical AI · Inside China AI">
+<meta property="og:description" content="Western investors are mapping Physical AI like software. China is building it like infrastructure.">
+<meta property="og:type" content="website">
+<style>
+:root {
+  --navy: #1E2A4A;
+  --navy-light: #2D3F6B;
+  --red: #C8312B;
+  --blue: #2B6CB0;
+  --blue-light: #4A90D9;
+  --blue-pale: #E8F0F8;
+  --gray-100: #F7F7F5;
+  --gray-200: #EBEBEA;
+  --gray-400: #9E9E9A;
+  --gray-600: #5A5A56;
+  --white: #FFFFFF;
+  --card-w: 640px;
+  --serif: 'Georgia', 'Times New Roman', serif;
+  --sans: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Courier New', Courier, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #F0EDE8;
+  font-family: var(--sans);
+  padding: 3rem 1rem 4rem;
+  color: var(--navy);
+}
+.suite-header {
+  max-width: var(--card-w);
+  margin: 0 auto 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--navy);
+}
+.suite-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--gray-400); text-transform: uppercase; margin-bottom: 8px; }
+.suite-title { font-family: var(--serif); font-size: 26px; color: var(--navy); line-height: 1.3; margin-bottom: 6px; }
+.suite-sub { font-size: 12px; color: var(--gray-600); line-height: 1.6; }
+.suite-link { font-family: var(--mono); font-size: 10px; color: var(--blue); margin-top: 10px; display: block; letter-spacing: 0.06em; }
+
+.card { width: var(--card-w); margin: 0 auto 2rem; background: var(--white); position: relative; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.card-inner { padding: 40px 44px 36px; }
+.card-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--gray-400); margin-bottom: 6px; text-transform: uppercase; }
+.act-label { max-width: var(--card-w); margin: 0 auto 1rem; font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--gray-400); text-transform: uppercase; display: flex; align-items: center; gap: 12px; }
+.act-label::after { content: ''; flex: 1; height: 0.5px; background: var(--gray-400); }
+.card-footer { border-top: 0.5px solid var(--gray-200); padding: 10px 44px; display: flex; align-items: center; justify-content: space-between; }
+.footer-brand { font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; color: var(--gray-400); text-transform: uppercase; }
+.footer-source { font-family: var(--mono); font-size: 9px; color: var(--gray-400); }
+
+/* Card 1 */
+.c1-accent { width: 3px; height: 100%; background: var(--red); position: absolute; left: 0; top: 0; }
+.c1-headline { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--red); text-transform: uppercase; margin-bottom: 28px; }
+.c1-main { font-family: var(--serif); font-size: 96px; line-height: 0.9; color: var(--navy); margin-bottom: 4px; }
+.c1-unit { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--gray-600); letter-spacing: 0.04em; margin-bottom: 32px; }
+.c1-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border-top: 1px solid var(--gray-200); padding-top: 24px; margin-bottom: 24px; }
+.c1-stat { padding-right: 20px; }
+.c1-stat + .c1-stat { border-left: 0.5px solid var(--gray-200); padding-left: 20px; padding-right: 0; }
+.c1-stat-num { font-family: var(--serif); font-size: 34px; color: var(--navy); line-height: 1; margin-bottom: 4px; }
+.c1-stat-num.red { color: var(--red); }
+.c1-stat-label { font-size: 11px; color: var(--gray-600); line-height: 1.4; }
+.c1-claim { font-family: var(--serif); font-style: italic; font-size: 16px; color: var(--navy-light); line-height: 1.55; border-left: 2px solid var(--red); padding-left: 16px; }
+
+/* Card 2 */
+.c2-bg { background: var(--navy); }
+.c2-bg .card-inner { padding: 48px 44px 40px; }
+.c2-eyebrow { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 28px; }
+.c2-quote { font-family: var(--serif); font-size: 30px; color: var(--white); line-height: 1.35; margin-bottom: 40px; }
+.c2-quote em { color: #7BA8D4; font-style: normal; }
+.c2-quote em.warm { color: #E8A87C; }
+.c2-pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.c2-pillar { background: rgba(255,255,255,0.07); border: 0.5px solid rgba(255,255,255,0.15); padding: 14px 10px; text-align: center; }
+.c2-pillar-icon { font-size: 18px; margin-bottom: 6px; display: block; color: #7BA8D4; font-family: var(--mono); font-weight: 700; }
+.c2-pillar-label { font-size: 11px; color: rgba(255,255,255,0.6); font-weight: 300; }
+
+/* Shared section title */
+.sec-title { font-family: var(--serif); font-size: 22px; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.sec-sub { font-size: 12px; color: var(--gray-600); margin-bottom: 24px; }
+
+/* Layer stack */
+.layer-stack { display: flex; flex-direction: column; gap: 4px; margin: 20px 0; }
+.layer { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; }
+.layer-num { font-family: var(--mono); font-size: 11px; opacity: 0.5; width: 20px; }
+.layer-name { font-weight: 500; font-size: 14px; flex: 1; padding-left: 12px; }
+.layer-examples { font-size: 11px; opacity: 0.65; text-align: right; max-width: 260px; line-height: 1.4; }
+
+/* Flywheel */
+.flywheel-grid { display: grid; grid-template-columns: 1fr 48px 1fr; gap: 0; align-items: start; margin: 24px 0; }
+.flywheel-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid; }
+.flywheel-label.west { color: var(--gray-600); border-color: var(--gray-400); }
+.flywheel-label.china { color: var(--red); border-color: var(--red); }
+.flywheel-box { padding: 10px 12px; margin-bottom: 6px; font-size: 12px; font-weight: 500; text-align: center; }
+.flywheel-box.west-box { background: var(--gray-100); color: var(--navy); }
+.flywheel-box.china-box { background: var(--navy); color: var(--white); font-size: 11px; }
+.flywheel-vs { display: flex; align-items: center; justify-content: center; padding-top: 48px; font-family: var(--serif); font-size: 22px; color: var(--gray-400); }
+
+/* Loop */
+.loop-caption { font-size: 12px; color: var(--gray-600); line-height: 1.6; margin-top: 16px; border-left: 2px solid var(--red); padding-left: 12px; }
+
+/* Category strip */
+.cat-strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 24px 0; }
+.cat-item { padding: 14px 6px; background: var(--gray-100); text-align: center; }
+.cat-item.highlight { background: var(--navy); }
+.cat-dot { width: 8px; height: 8px; border-radius: 50%; margin: 0 auto 8px; }
+.cat-name { font-size: 10px; font-weight: 500; line-height: 1.3; color: var(--navy); }
+.cat-item.highlight .cat-name { color: var(--white); }
+.cat-footnote { font-size: 11px; color: var(--gray-600); margin-top: 4px; padding-top: 12px; border-top: 0.5px solid var(--gray-200); line-height: 1.6; }
+
+/* Observability */
+.obs-note { font-size: 12px; color: var(--gray-600); margin-top: 16px; line-height: 1.6; }
+
+/* Before/after */
+.ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+.ba-panel-label { font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid; }
+.ba-panel-label.before { color: var(--gray-600); border-color: var(--gray-400); }
+.ba-panel-label.after { color: var(--blue); border-color: var(--blue); }
+.ba-col-label { font-family: var(--mono); font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-400); text-align: center; margin-bottom: 5px; }
+.ba-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-bottom: 4px; }
+.ba-cell { padding: 7px 5px; font-size: 9px; text-align: center; line-height: 1.3; font-weight: 500; }
+.ba-cell.us { background: #DCE8F5; color: #0C447C; }
+.ba-cell.eu { background: #E8E8E8; color: #444; }
+.ba-cell.uk { background: #D4E4F0; color: #1a3a5c; }
+.ba-cell.cn { background: #FAEAEA; color: #8B1A1A; }
+.ba-cell.empty { background: var(--gray-100); color: var(--gray-400); font-size: 8px; }
+.ba-missing { border: 1px dashed var(--red); padding: 8px; margin-top: 6px; font-size: 9px; color: var(--red); text-align: center; line-height: 1.5; }
+.ba-after-header { font-family: var(--mono); font-size: 8px; letter-spacing: 0.06em; text-transform: uppercase; text-align: center; padding: 5px; margin-bottom: 3px; }
+.ba-after-header.perc { background: #9FE1CB; color: #085041; }
+.ba-after-header.dec { background: #B5D4F4; color: #0C447C; }
+.ba-after-header.act { background: #FAC775; color: #633806; }
+.ba-after-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; margin-bottom: 3px; }
+.ba-after-cell { padding: 6px 4px; font-size: 9px; text-align: center; font-weight: 500; }
+.ba-after-cell.cn2 { background: #FAEAEA; color: #8B1A1A; }
+.ba-after-cell.us2 { background: #DCE8F5; color: #0C447C; }
+
+/* Pyramid */
+.pyramid-wrap { margin: 24px 0; }
+.pyramid-layer { display: flex; align-items: center; margin-bottom: 5px; }
+.pyramid-bar { height: 54px; display: flex; align-items: center; padding: 0 18px; }
+.pyramid-bar-label { font-weight: 600; font-size: 12px; color: var(--white); white-space: nowrap; }
+.pyramid-annotation { margin-left: 16px; font-size: 11px; color: var(--gray-600); line-height: 1.4; }
+
+/* Investor comparison */
+.invest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin: 20px 0; }
+.invest-header { padding: 10px 16px; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+.invest-header.left { background: var(--gray-100); color: var(--gray-600); }
+.invest-header.right { background: var(--navy); color: rgba(255,255,255,0.7); }
+.invest-item { padding: 12px 16px; font-size: 12px; line-height: 1.4; display: flex; align-items: flex-start; gap: 8px; }
+.invest-item.left-item { background: var(--gray-100); color: var(--gray-600); }
+.invest-item.right-item { background: var(--blue-pale); color: var(--navy); font-weight: 500; }
+.invest-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+.invest-caption { font-size: 11px; color: var(--gray-600); margin-top: 12px; font-style: italic; line-height: 1.6; }
+
+/* Heatmap */
+.heatmap { border: 0.5px solid var(--gray-200); overflow: hidden; margin: 16px 0; }
+.hm-header-row { display: grid; grid-template-columns: 140px repeat(3, 1fr); background: var(--navy); }
+.hm-header-cell { padding: 10px 8px; font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); text-align: center; border-left: 0.5px solid rgba(255,255,255,0.1); }
+.hm-header-cell:first-child { text-align: left; border-left: none; }
+.hm-row { display: grid; grid-template-columns: 140px repeat(3, 1fr); border-top: 0.5px solid var(--gray-200); }
+.hm-row:nth-child(odd) { background: var(--gray-100); }
+.hm-company { padding: 10px 12px; font-size: 12px; font-weight: 500; color: var(--navy); display: flex; flex-direction: column; justify-content: center; }
+.hm-company-sub { font-size: 10px; font-weight: 400; color: var(--gray-400); margin-top: 2px; }
+.hm-cell { border-left: 0.5px solid var(--gray-200); display: flex; align-items: center; justify-content: center; padding: 10px; }
+.hm-dots { display: flex; gap: 3px; }
+.hm-dot { width: 8px; height: 8px; border-radius: 50%; }
+.hm-dot.filled { background: var(--navy); }
+.hm-dot.empty { background: var(--gray-200); }
+.hm-legend { display: flex; gap: 16px; margin-top: 10px; font-size: 10px; color: var(--gray-600); align-items: center; flex-wrap: wrap; }
+.hm-legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+@media (max-width: 680px) {
+  :root { --card-w: 100%; }
+  .card-inner { padding: 28px 24px 24px; }
+  .card-footer { padding: 10px 24px; }
+  .c1-main { font-size: 64px; }
+  .c2-quote { font-size: 22px; }
+  .cat-strip { grid-template-columns: repeat(3, 1fr); }
+  .ba-grid { grid-template-columns: 1fr; }
+  .c2-pillars { grid-template-columns: repeat(2, 1fr); }
+  .invest-grid { grid-template-columns: 1fr; }
+  .flywheel-grid { grid-template-columns: 1fr; }
+  .flywheel-vs { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="suite-header">
+  <div class="suite-label">Inside China AI · Visual companion · April 2026</div>
+  <div class="suite-title">China Is Building Physical AI.<br>Western Investors Are Mapping the Wrong Thing.</div>
+  <div class="suite-sub">12 editorial graphics — Substack embeds &amp; LinkedIn carousel<br>Source: IFR World Robotics 2025 · insidechinaai.substack.com</div>
+  <a class="suite-link" href="https://insidechinaai.substack.com" target="_blank">↗ insidechinaai.substack.com</a>
+</div>
+
+<!-- ACT 1 -->
+<div class="act-label">Act 1 — Break the frame</div>
+
+<!-- CARD 1 -->
+<div class="card">
+  <div class="c1-accent"></div>
+  <div class="card-inner">
+    <div class="card-num">01 / 12</div>
+    <div class="c1-headline">China · Industrial robots · 2024</div>
+    <div class="c1-main">2M</div>
+    <div class="c1-unit">factory robots operational in China — a world record</div>
+    <div class="c1-stats">
+      <div class="c1-stat">
+        <div class="c1-stat-num red">54%</div>
+        <div class="c1-stat-label">of all new global robot installations in 2024</div>
+      </div>
+      <div class="c1-stat">
+        <div class="c1-stat-num">295k</div>
+        <div class="c1-stat-label">new units installed — highest level ever recorded</div>
+      </div>
+      <div class="c1-stat">
+        <div class="c1-stat-num">3 yrs</div>
+        <div class="c1-stat-label">to double: 1M in 2021 → 2M in 2024</div>
+      </div>
+    </div>
+    <div class="c1-claim">China's Physical AI story starts with deployed machines — not lab demos, not funding rounds, not press releases.</div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Source: IFR World Robotics 2025</div>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card c2-bg">
+  <div class="card-inner">
+    <div class="card-num" style="color:rgba(255,255,255,0.3)">02 / 12</div>
+    <div class="c2-eyebrow">The core thesis</div>
+    <div class="c2-quote">
+      Western investors are mapping Physical AI
+      <em> like software.</em><br>
+      China is building it
+      <em class="warm"> like infrastructure.</em>
+    </div>
+    <div class="c2-pillars">
+      <div class="c2-pillar"><span class="c2-pillar-icon">H</span><div class="c2-pillar-label">Hardware first</div></div>
+      <div class="c2-pillar"><span class="c2-pillar-icon">D</span><div class="c2-pillar-label">Deploy at scale</div></div>
+      <div class="c2-pillar"><span class="c2-pillar-icon">∂</span><div class="c2-pillar-label">Collect real data</div></div>
+      <div class="c2-pillar"><span class="c2-pillar-icon">↑</span><div class="c2-pillar-label">Scale the moat</div></div>
+    </div>
+  </div>
+  <div class="card-footer" style="background:rgba(0,0,0,0.2);border-top-color:rgba(255,255,255,0.08)">
+    <div class="footer-brand" style="color:rgba(255,255,255,0.25)">insidechinaai.substack.com</div>
+    <div class="footer-source" style="color:rgba(255,255,255,0.25)">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">03 / 12</div>
+    <div class="sec-title">The definition gap</div>
+    <div class="sec-sub">What CB Insights maps vs. what Physical AI actually covers</div>
+    <svg width="100%" viewBox="0 0 512 210" style="display:block;margin:8px 0 16px">
+      <defs>
+        <marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#C8312B" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <ellipse cx="210" cy="105" rx="185" ry="85" fill="#E8F0F8" stroke="#2B6CB0" stroke-width="1"/>
+      <ellipse cx="320" cy="105" rx="105" ry="75" fill="rgba(200,49,43,0.09)" stroke="#C8312B" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="88" y="90" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#2B6CB0" font-weight="500">Industrial robots</text>
+      <text x="88" y="108" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#2B6CB0" font-weight="500">AGVs · Drones</text>
+      <text x="88" y="126" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#2B6CB0" font-weight="500">Smart infrastructure</text>
+      <text x="320" y="99" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#C8312B" font-weight="600" text-anchor="middle">Humanoid</text>
+      <text x="320" y="117" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#C8312B" font-weight="600" text-anchor="middle">robots</text>
+      <text x="36" y="28" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#1E2A4A">China's Physical AI</text>
+      <text x="362" y="24" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#C8312B">CB Insights</text>
+      <text x="362" y="39" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="10" fill="#C8312B">maps only this →</text>
+      <text x="110" y="180" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="10" fill="#5A5A56" font-style="italic">← This gap is the analytical blind spot</text>
+    </svg>
+    <div style="font-size:11px;color:var(--gray-600);line-height:1.6;padding-top:12px;border-top:0.5px solid var(--gray-200);">
+      The humanoid robot debate is a <strong style="color:var(--navy)">subset</strong> of China's Physical AI buildout — not a synonym for it. Analysts anchored to the CB Insights frame are tracking one branch of a much larger ecosystem.
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- ACT 2 -->
+<div class="act-label">Act 2 — Show the structure</div>
+
+<!-- CARD 4 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">04 / 12</div>
+    <div class="sec-title">China's industrial nervous system</div>
+    <div class="sec-sub">Three integrated layers — not a software stack, not a product category</div>
+    <div class="layer-stack">
+      <div class="layer" style="background:#1E2A4A;color:white">
+        <div class="layer-num" style="color:rgba(255,255,255,0.4)">3</div>
+        <div class="layer-name">Actuation</div>
+        <div class="layer-examples" style="color:rgba(255,255,255,0.55)">Industrial robots · AGVs · CNC · Drones · Humanoids</div>
+      </div>
+      <div style="text-align:center;color:var(--gray-400);font-size:18px;padding:3px 0;letter-spacing:4px">⇅</div>
+      <div class="layer" style="background:#2B6CB0;color:white">
+        <div class="layer-num" style="color:rgba(255,255,255,0.4)">2</div>
+        <div class="layer-name">Decision</div>
+        <div class="layer-examples" style="color:rgba(255,255,255,0.6)">Edge AI · Foundation models · Digital twins · Fleet orchestration</div>
+      </div>
+      <div style="text-align:center;color:var(--gray-400);font-size:18px;padding:3px 0;letter-spacing:4px">⇅</div>
+      <div class="layer" style="background:#4A90D9;color:white">
+        <div class="layer-num" style="color:rgba(255,255,255,0.4)">1</div>
+        <div class="layer-name">Perception</div>
+        <div class="layer-examples" style="color:rgba(255,255,255,0.65)">LiDAR · Machine vision · Industrial sensors · Cameras</div>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--gray-600);line-height:1.6;margin-top:8px;border-left:2px solid var(--blue);padding-left:12px;">
+      The bidirectional arrows matter. Data flows up and down continuously. This is a feedback system — not a waterfall stack. Western market maps show Layer 3 only.
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">05 / 12</div>
+    <div class="sec-title">Map vs. flywheel</div>
+    <div class="sec-sub">Two fundamentally different theories of how Physical AI compounds</div>
+    <div class="flywheel-grid">
+      <div>
+        <div class="flywheel-label west">Western market map</div>
+        <div class="flywheel-box west-box">Data layer</div>
+        <div style="text-align:center;color:var(--gray-400);font-size:14px;padding:4px 0">↓</div>
+        <div class="flywheel-box west-box">Foundation models</div>
+        <div style="text-align:center;color:var(--gray-400);font-size:14px;padding:4px 0">↓</div>
+        <div class="flywheel-box west-box">Humanoid product</div>
+        <div style="text-align:center;color:var(--gray-400);font-size:14px;padding:4px 0">↓</div>
+        <div class="flywheel-box west-box" style="background:var(--gray-200)">Demo / pilot</div>
+        <div style="margin-top:10px;font-size:10px;color:var(--gray-400);font-style:italic;">Linear. Ends at demo.</div>
+      </div>
+      <div class="flywheel-vs">vs</div>
+      <div>
+        <div class="flywheel-label china">China's deployment flywheel</div>
+        <div class="flywheel-box china-box">Enabling hardware</div>
+        <div style="text-align:center;color:var(--red);font-size:14px;padding:4px 0">↓ ↺</div>
+        <div class="flywheel-box china-box">Deploy at scale</div>
+        <div style="text-align:center;color:var(--red);font-size:14px;padding:4px 0">↓ ↺</div>
+        <div class="flywheel-box china-box">Operational data</div>
+        <div style="text-align:center;color:var(--red);font-size:14px;padding:4px 0">↓ ↺</div>
+        <div class="flywheel-box china-box" style="background:var(--red)">Model improvement → redeploy</div>
+        <div style="margin-top:10px;font-size:10px;color:var(--red);font-style:italic;">Circular. Self-reinforcing.</div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">06 / 12</div>
+    <div class="sec-title">In China, deployment is the training loop</div>
+    <div class="sec-sub">The mechanism that turns scale into structural competitive advantage</div>
+    <svg width="100%" viewBox="0 0 512 230" style="display:block;margin:20px 0 8px">
+      <defs>
+        <marker id="arr6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#C8312B" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <circle cx="256" cy="115" r="90" fill="none" stroke="var(--gray-200)" stroke-width="1" stroke-dasharray="3 3"/>
+      <rect x="176" y="14" width="160" height="38" rx="4" fill="#1E2A4A"/>
+      <text x="256" y="37" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="white">Pilot deployment</text>
+      <path d="M 330 46 Q 374 74 360 115" fill="none" stroke="#C8312B" stroke-width="1.5" marker-end="url(#arr6)"/>
+      <rect x="348" y="96" width="148" height="38" rx="4" fill="#2B6CB0"/>
+      <text x="422" y="119" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="white">Operational data</text>
+      <path d="M 360 152 Q 342 186 298 196" fill="none" stroke="#C8312B" stroke-width="1.5" marker-end="url(#arr6)"/>
+      <rect x="176" y="178" width="160" height="38" rx="4" fill="#2B6CB0"/>
+      <text x="256" y="201" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="white">Failure detection</text>
+      <path d="M 180 196 Q 148 184 144 150" fill="none" stroke="#C8312B" stroke-width="1.5" marker-end="url(#arr6)"/>
+      <rect x="22" y="96" width="120" height="38" rx="4" fill="#2D3F6B"/>
+      <text x="82" y="119" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="white">Retraining</text>
+      <path d="M 142 100 Q 152 66 178 50" fill="none" stroke="#C8312B" stroke-width="1.5" marker-end="url(#arr6)"/>
+      <text x="256" y="107" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#C8312B">Reliability</text>
+      <text x="256" y="124" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#C8312B">compounds</text>
+      <text x="256" y="140" text-anchor="middle" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="10" fill="#9E9E9A">↑ broader rollout</text>
+    </svg>
+    <div class="loop-caption">
+      This is why deployment scale compounds into a structural moat. Every unit deployed generates operational data that Western firms — still in pilot — cannot access. The loop is the advantage.
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 7 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">07 / 12</div>
+    <div class="sec-title">Physical AI is broader than humanoids</div>
+    <div class="sec-sub">Six deployment categories — one is receiving 90% of Western analyst attention</div>
+    <div class="cat-strip">
+      <div class="cat-item"><div class="cat-dot" style="background:var(--blue)"></div><div class="cat-name">Industrial robots</div></div>
+      <div class="cat-item highlight"><div class="cat-dot" style="background:var(--red)"></div><div class="cat-name">Humanoids</div></div>
+      <div class="cat-item"><div class="cat-dot" style="background:var(--blue)"></div><div class="cat-name">Autonomous vehicles</div></div>
+      <div class="cat-item"><div class="cat-dot" style="background:var(--blue)"></div><div class="cat-name">Drones</div></div>
+      <div class="cat-item"><div class="cat-dot" style="background:var(--blue)"></div><div class="cat-name">Logistics robots</div></div>
+      <div class="cat-item"><div class="cat-dot" style="background:var(--blue)"></div><div class="cat-name">Smart infra­structure</div></div>
+    </div>
+    <div class="cat-footnote">
+      <strong style="color:var(--navy)">The highlighted category</strong> dominates Western coverage. China's 2M deployed robots are almost entirely in the other five. Humanoids are the most visible category — not the most deployed, not the largest by revenue, not where the data flywheel is already spinning.
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- ACT 3 -->
+<div class="act-label">Act 3 — Make the critique concrete</div>
+
+<!-- CARD 8 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">08 / 12</div>
+    <div class="sec-title">The observability problem</div>
+    <div class="sec-sub">Strategic importance vs. visibility to Western analysts</div>
+    <svg width="100%" viewBox="0 0 512 248" style="display:block;margin:16px 0 8px">
+      <defs>
+        <marker id="ax8" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#9E9E9A" stroke-width="1.5"/>
+        </marker>
+      </defs>
+      <line x1="60" y1="206" x2="60" y2="22" stroke="#9E9E9A" stroke-width="0.8" marker-end="url(#ax8)"/>
+      <line x1="60" y1="206" x2="492" y2="206" stroke="#9E9E9A" stroke-width="0.8" marker-end="url(#ax8)"/>
+      <text x="56" y="216" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#9E9E9A" text-anchor="middle">Low</text>
+      <text x="492" y="220" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#9E9E9A">High</text>
+      <text x="56" y="16" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#9E9E9A" text-anchor="middle">High</text>
+      <text transform="rotate(-90,16,122)" x="16" y="122" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="10" fill="#5A5A56" text-anchor="middle">Visibility to Western analysts</text>
+      <text x="276" y="234" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="10" fill="#5A5A56" text-anchor="middle">Strategic importance</text>
+      <line x1="80" y1="186" x2="466" y2="40" stroke="var(--gray-200)" stroke-width="1" stroke-dasharray="4 3"/>
+      <text x="296" y="100" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="var(--gray-400)" transform="rotate(-16,296,100)">"what gets covered ≠ what matters"</text>
+      <circle cx="132" cy="50" r="13" fill="#2B6CB0" opacity="0.7"/>
+      <circle cx="170" cy="64" r="11" fill="#2B6CB0" opacity="0.6"/>
+      <circle cx="150" cy="80" r="8" fill="#4A90D9" opacity="0.5"/>
+      <text x="202" y="54" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#2B6CB0" font-weight="500">US humanoid demos</text>
+      <text x="202" y="68" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#2B6CB0">(Figure, 1X, Apptronik)</text>
+      <circle cx="384" cy="178" r="17" fill="#C8312B" opacity="0.75"/>
+      <circle cx="424" cy="166" r="13" fill="#C8312B" opacity="0.6"/>
+      <circle cx="358" cy="164" r="11" fill="#C8312B" opacity="0.5"/>
+      <text x="292" y="140" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="11" fill="#C8312B" font-weight="500">Chinese industrial deployments</text>
+      <text x="292" y="154" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="9" fill="#C8312B">(Geek+, HikVision, CATL robotics)</text>
+    </svg>
+    <div class="obs-note">Western research maps rely on English-language press, LinkedIn announcements, and VC disclosures. Chinese factory-floor deployments in tier-2 cities generate none of these signals. <strong style="color:var(--navy)">The analysis gap is structural, not accidental.</strong></div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 9 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">09 / 12</div>
+    <div class="sec-title">Before / after: redesigning the market map</div>
+    <div class="sec-sub">Organized by geography → organized by function</div>
+    <div class="ba-grid">
+      <div>
+        <div class="ba-panel-label before">CB Insights: by geography / form factor</div>
+        <div class="ba-cols"><div class="ba-col-label">Americas</div><div class="ba-col-label">Europe</div><div class="ba-col-label">Asia</div></div>
+        <div class="ba-cols"><div class="ba-cell us">Figure AI</div><div class="ba-cell eu">Agility Rob.</div><div class="ba-cell us">Boston Dyn.</div></div>
+        <div class="ba-cols"><div class="ba-cell us">Apptronik</div><div class="ba-cell uk">Sanctuary</div><div class="ba-cell us">1X Tech</div></div>
+        <div class="ba-cols"><div class="ba-cell us">Skild AI</div><div class="ba-cell eu">Franka Em.</div><div class="ba-cell empty">—</div></div>
+        <div class="ba-missing">⚠ Missing: Geek+, HikVision, Mech-Mind,<br>UBTECH, Unitree, DJI, CATL robotics</div>
+      </div>
+      <div>
+        <div class="ba-panel-label after">Proposed: by functional layer</div>
+        <div class="ba-after-cols"><div class="ba-after-header perc">Perception</div><div class="ba-after-header dec">Decision</div><div class="ba-after-header act">Actuation</div></div>
+        <div class="ba-after-cols"><div class="ba-after-cell cn2">HikVision</div><div class="ba-after-cell cn2">Baidu Apollo</div><div class="ba-after-cell cn2">Geek+</div></div>
+        <div class="ba-after-cols"><div class="ba-after-cell cn2">Mech-Mind</div><div class="ba-after-cell us2">Skild AI</div><div class="ba-after-cell cn2">Unitree</div></div>
+        <div class="ba-after-cols"><div class="ba-after-cell cn2">DJI</div><div class="ba-after-cell us2">Figure AI</div><div class="ba-after-cell us2">Boston Dyn.</div></div>
+        <div style="margin-top:6px;padding:8px;background:var(--blue-pale);font-size:9px;color:var(--blue);line-height:1.5;border-left:2px solid var(--blue);">Mixed by function, not by flag. Chinese and Western firms compete layer by layer.</div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 10 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">10 / 12</div>
+    <div class="sec-title">Where the moat actually sits</div>
+    <div class="sec-sub">The value pyramid — investors are looking at the top floor only</div>
+    <div class="pyramid-wrap">
+      <div class="pyramid-layer">
+        <div class="pyramid-bar" style="background:var(--red);width:100%">
+          <div class="pyramid-bar-label">Visible products · Humanoids · AVs · Drones</div>
+        </div>
+      </div>
+      <div style="font-size:10px;color:var(--red);margin:2px 0 8px;font-family:var(--mono);letter-spacing:0.06em;">← MOST ANALYST ATTENTION</div>
+      <div class="pyramid-layer">
+        <div class="pyramid-bar" style="background:var(--navy);width:86%">
+          <div class="pyramid-bar-label">Controllers · Fleet orchestration · Simulation / data</div>
+        </div>
+        <div class="pyramid-annotation">China's domestic suppliers now hold <strong>57% market share</strong> here</div>
+      </div>
+      <div style="height:6px"></div>
+      <div class="pyramid-layer">
+        <div class="pyramid-bar" style="background:var(--blue);width:70%">
+          <div class="pyramid-bar-label">Sensors · Actuators · Reducers · Edge AI chips</div>
+        </div>
+        <div class="pyramid-annotation"><strong>Bottleneck and moat.</strong> Export controls have accelerated Chinese domestic supply.</div>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--gray-600);margin-top:16px;border-top:0.5px solid var(--gray-200);padding-top:12px;line-height:1.6;">
+      A market map that shows only the top layer is like mapping the auto industry by counting car brands — and missing the tire, chip, and battery suppliers that determine who wins.
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- ACT 4 -->
+<div class="act-label">Act 4 — The investment implication</div>
+
+<!-- CARD 11 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">11 / 12</div>
+    <div class="sec-title">Where investors look vs. where value may sit</div>
+    <div class="sec-sub">The same Physical AI market — two very different analytical lenses</div>
+    <div class="invest-grid">
+      <div class="invest-header left">What foreign investors track</div>
+      <div class="invest-header right">Where value may actually sit</div>
+      <div class="invest-item left-item"><div class="invest-dot" style="background:var(--gray-400)"></div>Humanoid robot demos and press events</div>
+      <div class="invest-item right-item"><div class="invest-dot" style="background:var(--blue)"></div>Enabling hardware: sensors, reducers, edge chips</div>
+      <div class="invest-item left-item"><div class="invest-dot" style="background:var(--gray-400)"></div>Foundation model funding rounds</div>
+      <div class="invest-item right-item"><div class="invest-dot" style="background:var(--blue)"></div>Controllers and fleet orchestration software</div>
+      <div class="invest-item left-item"><div class="invest-dot" style="background:var(--gray-400)"></div>Flagship brand valuations</div>
+      <div class="invest-item right-item"><div class="invest-dot" style="background:var(--blue)"></div>Deployment channel density and logistics exposure</div>
+      <div class="invest-item left-item"><div class="invest-dot" style="background:var(--gray-400)"></div>Demo-stage metrics (lab performance)</div>
+      <div class="invest-item right-item"><div class="invest-dot" style="background:var(--blue)"></div>Industrial rollout scale and operational data access</div>
+    </div>
+    <div class="invest-caption">This is not a claim that Chinese firms will win. It is a claim that the current analytical frame makes it structurally impossible to see where the competition is actually happening.</div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+<!-- CARD 12 -->
+<div class="card">
+  <div class="card-inner">
+    <div class="card-num">12 / 12</div>
+    <div class="sec-title">China's leading players don't fit one box</div>
+    <div class="sec-sub">Four companies · three dimensions · deployment at scale across all layers</div>
+    <div class="heatmap">
+      <div class="hm-header-row">
+        <div class="hm-header-cell">Company</div>
+        <div class="hm-header-cell">Hardware depth</div>
+        <div class="hm-header-cell">AI integration</div>
+        <div class="hm-header-cell">Deployment scale</div>
+      </div>
+      <div class="hm-row">
+        <div class="hm-company">DJI<div class="hm-company-sub">Drones + vision systems</div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div></div></div>
+      </div>
+      <div class="hm-row">
+        <div class="hm-company">Geek+<div class="hm-company-sub">50,000+ AGVs deployed</div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div></div></div>
+      </div>
+      <div class="hm-row">
+        <div class="hm-company">HikVision<div class="hm-company-sub">Industrial perception</div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+      </div>
+      <div class="hm-row">
+        <div class="hm-company">Unitree<div class="hm-company-sub">Quadruped + humanoid</div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div></div></div>
+        <div class="hm-cell"><div class="hm-dots"><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot filled"></div><div class="hm-dot empty"></div><div class="hm-dot empty"></div></div></div>
+      </div>
+    </div>
+    <div class="hm-legend">
+      <div class="hm-legend-dot" style="background:var(--navy)"></div><span>Strong position</span>
+      <div class="hm-legend-dot" style="background:var(--gray-200)"></div><span>Limited</span>
+      <span style="margin-left:auto;font-style:italic;font-size:10px;">Editorial assessment · Inside China AI 2026</span>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="footer-brand">insidechinaai.substack.com</div>
+    <div class="footer-source">Inside China AI · April 2026</div>
+  </div>
+</div>
+
+</body>
+</html>
